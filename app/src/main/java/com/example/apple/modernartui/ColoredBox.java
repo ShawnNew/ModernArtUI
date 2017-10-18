@@ -1,6 +1,6 @@
 package com.example.apple.modernartui;
 
-import android.content.Context;
+
 import android.content.Intent;
 import android.net.Uri;
 import android.support.v7.app.AlertDialog;
@@ -13,7 +13,6 @@ import android.view.MenuItem;
 import android.content.DialogInterface;
 import android.widget.TextView;
 
-import static android.app.PendingIntent.getActivity;
 
 public class ColoredBox extends AppCompatActivity {
 
