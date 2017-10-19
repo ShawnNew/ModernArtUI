@@ -10,40 +10,44 @@
     tools:layout_editor_absoluteX="0dp"
     tools:layout_editor_absoluteY="81dp">
 
+    <!-- Define the Seekbar -->
     <SeekBar
         android:id="@+id/SlideBar"
-        android:layout_width="396dp"
+        android:layout_width="356dp"
         android:layout_height="0dp"
         app:layout_constraintDimensionRatio="w,1:"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
+    <!-- Define the left-top box -->
     <GridView
         android:id="@+id/gridView1"
-        android:layout_width="160dp"
-        android:layout_height="235dp"
+        android:layout_width="140dp"
+        android:layout_height="238dp"
         android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="2dp"
         android:background="@color/colorAccent"
-        app:layout_constraintHorizontal_bias="0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/SlideBar" />
 
+    <!-- Define the left-bottom box -->
     <GridView
         android:id="@+id/gridView2"
-        android:layout_width="160dp"
-        android:layout_height="235dp"
+        android:layout_width="140dp"
+        android:layout_height="238dp"
         android:layout_marginTop="5dp"
+        android:layout_marginLeft="2dp"
         android:background="#d45296"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0"
+
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/gridView1" />
 
 
+    <!-- Define the right-top box -->
     <GridView
         android:id="@+id/gridView3"
-        android:layout_width="220dp"
+        android:layout_width="233dp"
         android:layout_height="157dp"
         android:layout_marginTop="5dp"
         android:layout_marginLeft="5dp"
@@ -52,9 +56,10 @@
         app:layout_constraintLeft_toRightOf="@id/gridView1"
         app:layout_constraintTop_toBottomOf="@id/SlideBar"/>
 
+    <!-- Define the right-middle box -->
     <GridView
         android:id="@+id/gridView4"
-        android:layout_width="220dp"
+        android:layout_width="233dp"
         android:layout_height="157dp"
         android:layout_marginTop="5dp"
         android:layout_marginLeft="5dp"
@@ -63,9 +68,10 @@
         app:layout_constraintTop_toBottomOf="@id/gridView3"
         app:layout_constraintLeft_toRightOf="@id/gridView1"/>
 
+    <!-- Define the right-bottom box -->
     <GridView
         android:id="@+id/gridView5"
-        android:layout_width="220dp"
+        android:layout_width="233dp"
         android:layout_height="157dp"
         android:layout_marginTop="5dp"
         android:layout_marginLeft="5dp"
@@ -74,8 +80,5 @@
         app:layout_constraintTop_toBottomOf="@id/gridView4"
         app:layout_constraintLeft_toRightOf="@id/gridView2"
 />
-
-
-
 
 </android.support.constraint.ConstraintLayout>
